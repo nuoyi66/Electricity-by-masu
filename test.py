@@ -46,8 +46,7 @@ try :
         url = 'http://www.pushplus.plus/send?token=' + token + '&title=' + title +'&channel=mail' + '&content=' + str(
         time.date()) + '\n当前剩余电量：' + str(balance_value) + '度'
         requests.get(url)
-    else:
-        print(balance_value)
+    print(balance_value)
 except Exception:
     url = 'http://www.pushplus.plus/send?token=' + token + '&title=' + title +'&channel=mail' + '&content=' + str(
     time.date()) + '\n查询失败'
